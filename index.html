@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front end with Foundation</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/foundation-sites/dist/css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/foundation-sites/dist/css/foundation-float.css">
+   <link rel="stylesheet" type="text/css" href="node_modules/foundation-sites/dist/css/foundation-prototype.css">
+ <link rel="stylesheet" type="text/css" href="node_modules/foundation-sites/dist/css/foundation-rtl.css"> 
+  <link rel="stylesheet" type="text/css" href="customcss/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+</head>
+<body>
+<div class="navigating" data-sticky-container>
+  <div class="sticky" data-sticky data-margin-top="0">
+  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Hotel</li>
+      <li>
+        <a href="#">Home</a>
+        <ul class="menu vertical">
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+ 
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 small-12 columns">
+   <img src="images/slider1.jpeg" width="100%">
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="small-12 large-4 columns">
+    <p class="likeJumbo">
+    <img src="images/spa.jpeg">
+      The art and science of pure flower and plant essences.
+    </p>
+  </div>
+  <div class="small-12 large-4 columns">
+    <p class="likeJumbo">
+    <img src="images/fit.jpeg">
+      Take care of your body. It’s the only place you have to live
+    </p>
+  </div>
+  <div class="small-12 large-4 columns">
+    <p class="likeJumbo">
+    <img src="images/acc.jpeg">
+     We are what you need and you know it. Come see for yourself
+    </p>
+  </div>
+</div>
+<!--form-->
+  <div class="row">
+    <div class="small-12 large-8 columns formwithborder">
+        <form>
+        <legend>Book a Place with us</legend>
+          <div class="row">
+            <div class="large-6 columns">
+              <input type="text" name="" class="classinput" placeholder="Enter Your Name">
+            </div>
+            <div class="large-6 columns">
+              <input type="text" name="" class="classinput" placeholder="Enter Your Second Name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <input type="email" name="" class="classinput" placeholder="Enter Your Email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <textarea class="classinput" placeholder="Enter a message"></textarea>
+              <a href="#" class="button expand radius btn-lg">Expanded Button</a>
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="small-12 large-4 columns">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+      </p>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="large-12 small-12">
+      <!--map starts-->
+<div id="map" style="width:100%px;height:200px">
+  
+</div>
+<!--map end -->
+  </div>
+</div>
+
+<!--start footer-->
+<footer id="footer">
+  <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</i></p>
+</footer>
+<!--end footer-->
+<script type="text/javascript" src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+</script>
+
+<!--google map script-->
+<script>
+  function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-1.3, 36.7073085),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<!--end google maps script-->
+
+<!--start google maps API-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9lpE_IrrmFw9xqyVmDg86yj7J98PBSGw&callback=myMap" async defer></script>
+<!--end google maps API-->
+
+</body>
+</html>

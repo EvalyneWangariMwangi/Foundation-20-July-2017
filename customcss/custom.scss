@@ -1,0 +1,110 @@
+//navigation
+$fullwidth: 100%;
+$bordercolor: #ebccd1;
+.navigating{
+	margin-top:10px;
+	margin-bottom:10px;
+	width: $fullwidth;
+	height: 100px !important;
+	padding: 10px;
+	background-color: $bordercolor !important;
+}
+
+//mixins
+//using mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//slider
+.slider{
+	width: $fullwidth;
+}
+.row{
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.top-bar{
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: auto;
+	background-color: $bordercolor !important;
+	height: 100px !important;
+	ul{
+		background-color: $bordercolor !important;
+	}
+}
+.menu{
+	float: right !important;
+}
+.likeJumbo{
+	background-color:#eee;
+	padding:10px;
+	@include border-radius(10px); 
+	img{
+	width: $fullwidth;
+	@include border-radius(50%);
+	height: 200px;
+	}
+}
+.mg5{
+	margin-top:5px;
+}
+.mg10{
+	margin-top:10px;
+}
+btn-lg{
+	    padding: 10px 16px !important;
+    	font-size: 18px !important;
+    	line-height: 1.3333333 !important;
+    	@include border-radius(10px);
+}
+
+
+.formwithborder{ 
+padding:10px;
+border-style: outset;
+ border-style: solid;
+ border-width: 3px;
+ border-color: $bordercolor;
+@include border-radius(10px); 
+height:300px;}
+form{
+	.classinput{
+		padding:10px;
+		border-style: outset;
+		 border-style: solid;
+		 border-width: 1px / 4;
+		 border-color: $bordercolor;
+		@include border-radius(5px);
+	}
+}
+.empty{
+	hr{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border: 0;
+  	width: 100%;
+  	color: #f00;
+	background-color: $bordercolor;
+	height: 100px;
+}
+}
+hr{
+	border: 0;
+  	width: 100%;
+  	color: #f00;
+	background-color: $bordercolor;
+	height: 5px;
+}
+#footer{
+	background-color:#000;
+	height: 50px;
+	p{
+		color:white;
+		text-align:center;
+	}
+}
