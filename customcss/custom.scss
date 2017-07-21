@@ -71,7 +71,10 @@ border-style: outset;
  border-width: 3px;
  border-color: $bordercolor;
 @include border-radius(10px); 
-height:300px;}
+height:600px;
+display:block;
+background-color:#eee;
+}
 form{
 	.classinput{
 		padding:10px;
@@ -105,6 +108,13 @@ hr{
 	height: 50px;
 	p{
 		color:white;
+		text-align:center;
+	}
+}
+.team{
+padding: 10px;
+margin:10px;
+	h4{
 		text-align:center;
 	}
 }

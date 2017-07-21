@@ -48,29 +48,48 @@
 <hr>
 <div class="row">
   <div class="small-12 large-4 columns">
-    <p class="likeJumbo">
-    <img src="images/spa.jpeg">
-      The art and science of pure flower and plant essences.
-    </p>
+  <div class="card" style="width: 100%; height: 350px">
+  <div class="card-divider">
+    Spa
   </div>
-  <div class="small-12 large-4 columns">
-    <p class="likeJumbo">
-    <img src="images/fit.jpeg">
-      Take care of your body. It’s the only place you have to live
-    </p>
+<img src="images/spa.jpeg">
+  <div class="card-section">
+    <p>The art and science of pure flower and plant essences.</p>
+ 
   </div>
-  <div class="small-12 large-4 columns">
-    <p class="likeJumbo">
-    <img src="images/acc.jpeg">
-     We are what you need and you know it. Come see for yourself
-    </p>
+</div>
   </div>
+   <div class="small-12 large-4 columns">
+  <div class="card" style="width: 100%; height: 350px">
+  <div class="card-divider">
+   Fitness
+  </div>
+<img src="images/fit.jpeg">
+  <div class="card-section">
+    <p>Take care of your body. It’s the only place you have to live</p>
+ 
+  </div>
+</div>
+  </div>
+   <div class="small-12 large-4 columns">
+  <div class="card" style="width: 100%; height: 350px">
+  <div class="card-divider">
+    Accomadation
+  </div>
+<img src="images/acc.jpeg" height="300px">
+  <div class="card-section">
+    <p>We are what you need and you know it. Come see for yourself</p>
+ 
+  </div>
+</div>
+  </div>
+ 
 </div>
 <!--form-->
   <div class="row">
-    <div class="small-12 large-8 columns formwithborder">
+    <div class="small-12 large-8 columns align-center-middle formwithborder">
         <form>
-        <legend>Book a Place with us</legend>
+        <legend class="text-center">Book a Place with us</legend>
           <div class="row">
             <div class="large-6 columns">
               <input type="text" name="" class="classinput" placeholder="Enter Your Name">
@@ -86,19 +105,99 @@
           </div>
           <div class="row">
             <div class="large-12 columns">
+              <legend>Choose Your Favorite</legend>
+                <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+                <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+            </div>
+          </div>
+           <div class="row">
+           <div class="large-12 columns">
+              <legend>Switch</legend>
+           <div class="switch large">
+              <input class="switch-input alert" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+              <label class="switch-paddle float-left" for="exampleRadioSwitch1">
+              <span class="switch-active" aria-hidden="true">Yes</span>
+              <span class="switch-inactive" aria-hidden="true">No</span>
+              </label>
+            </div>
+          </div>
+           </div>
+          <div class="row">
+            <div class="large-12 columns">
               <textarea class="classinput" placeholder="Enter a message"></textarea>
-              <a href="#" class="button expand radius btn-lg">Expanded Button</a>
+              <a href="#" class="button rounded bordered large shadow alert"> Submit</a>
             </div>
           </div>
         </form>
     </div>
     <div class="small-12 large-4 columns">
-      <p>
+      <p class="hide-for-small">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
       </p>
     </div>
   </div>
 
+<!--team-->
+<div class="team align-center-middle show-for-landscape">
+  <h4 class="text-center callout alert small">Meet Our Team</h4>
+  <div class="row small-up-2 medium-up-3 large-up-4">
+  <div class="column column-block">
+    <img src= "images/avatar.jpeg">
+  </div>
+  <div class="column column-block">
+    <img src= "images/avatar.jpeg">
+  </div>
+  <div class="column column-block">
+    <img src= "images/avatar.jpeg">
+  </div>
+  <div class="column column-block">
+    <img src= "images/avatar.jpeg">
+  </div>
+  <div class="column column-block">
+    <img src= "images/avatar.jpeg">
+  </div>
+  <div class="column column-block">
+    <img src= "images/avatar.jpeg">
+  </div>
+</div>
+</div>
+
+<!--end team-->
+
+<!--clients-->
+<div class="reveal" id="exampleModal1" data-reveal>
+<div class="media-object">
+  <div class="media-object-section">
+    <div class="thumbnail">
+      <img src= "images/avatar.jpeg">
+    </div>
+  </div>
+  <div class="media-object-section">
+    <h4>I will definitely visit again!</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro at, tenetur cum beatae excepturi id ipsa? Esse dolor laboriosam itaque ea nesciunt, earum, ipsum commodi beatae velit id enim repellat.</p>
+    <!-- Nested media object starts here -->
+    <div class="media-object">
+      <div class="media-object-section">
+        <div class="thumbnail">
+          <img src= "images/avatar.jpeg">
+        </div>
+      </div>
+      <div class="media-object-section">
+        <h4>Best experience ever</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas magni, quam mollitia voluptatum in, animi suscipit tempora ea consequuntur non nulla vitae doloremque. Eius rerum, cum earum quae eveniet odio.</p>
+      </div>
+    </div>
+    <!-- And ends here -->
+  </div>
+</div>
+   <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<p><button class="button large alert bordered rounded" data-open="exampleModal1">See What our clients Say</button></p>
+<!--clients-->
 <div class="row">
   <div class="large-12 small-12">
       <!--map starts-->
